@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+    <script src="script.js" defer=""></script>
+    <link rel="stylesheet" href="style.css">
+    <title>1 задание</title>
+</head>
+
+<body style="background-color: seagreen;">
+    <h1 style="margin-top:50px">Задание 1</h1>
+    <div class="row text-center m-auto">
+        <div class="img col-12 col-md-6 col-lg-12"><img src="sshLogin.png" alt="ping"><br/><span>Выполняем вход на учебный сервер с помощью командной строки командой ssh</span></div>
+        <div class="img col-12 col-md-6 col-lg-12"><img src="ping.png" alt="ping"><br/><span>Выполняем команду ping с учебного сервера, чтобы узнать ip-адрес домена kubsu.ru ping kubsu.ru</span></div>
+        <div class="my-2 img col-12 col-md-6 col-lg-12"><img src="nslookup.png" alt="nslookup_kubsu"><br/><span>Выполняем команду nslookup для домена kubsu.ru с параметрами -A для определения ip-адреса домена и -MX для определения ip-адреса почтового шлюза</span></div>
+        <div class="my-2 img col-12 col-md-6 col-lg-12"><img src="nslookup2.png" alt="nslookup_kubsu"><br/><span>Выполняем команду nslookup для домена kubsu-dev.ru с параметрами -A для определения ip-адреса домена и -MX для определения ip-адреса почтового шлюза</span></div>
+        <div class="img col-12 col-md-6 col-lg-12"><img src="whois.png" alt="whois_kubsu"><br/><span>Выполняем команду whois для домена kubsu.ru и kubsu-dev.ru для получения регистрационных данных</span></div>
+        <div class="img col-12 col-md-6 col-lg-12"><img src="gitClone.png" alt="fileZilla"><br/><span>Клонируем репозиторий с помощью команды git clone</span></div>
+        <div class="img col-12 col-md-6 col-lg-12"><img src="fileZilla.png" alt="fileZilla"><br/><span>С FileZilla соединяемся с сервером по протоколу FTP и копируем файлы из директории /var/www/html/u52401 на локальный компьютер</span></div>
+        
+    </div>
+    <style>
+	body{
+ 		margin:0;
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+		color: white;
+	}
+	img{
+		margin-top:40px;
+		width:80%;
+		height:70%;	
+	}
+	span{
+		font-size:3vw;
+	}
+    </style>
+
+</body>
+
+</html>

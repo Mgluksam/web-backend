@@ -94,8 +94,8 @@
             setcookie('emailCorrect', $email, time() + (365 * 24 * 60 * 60));
             setcookie('textCorrect', $area, time() + (365 * 24 * 60 * 60));
 
-            $user = 'root'; // Заменить на ваш логин uXXXXX
-            $pass = ''; // Заменить на пароль, такой же, как от SSH
+            $user = 'u52401'; // Заменить на ваш логин uXXXXX
+            $pass = '7321086'; // Заменить на пароль, такой же, как от SSH
             $db = new PDO(
               'mysql:host=localhost;dbname=application',
               $user,

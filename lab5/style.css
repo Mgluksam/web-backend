@@ -1,0 +1,17 @@
+body,
+html {
+    font-size: 20px;
+    height: 100%;
+}
+.error{
+    box-shadow: 0 0 10px red;
+}
+.form{
+    box-shadow: 0 0 15px grey;
+}
+.invalid-feedback {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+  

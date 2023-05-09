@@ -84,7 +84,7 @@
             $user = 'u52401'; // Заменить на ваш логин uXXXXX
             $pass = '7321086'; // Заменить на пароль, такой же, как от SSH
             $db = new PDO(
-              'mysql:host=localhost;dbname=application',
+              'mysql:host=localhost;dbname=u52401',
               $user,
               $pass,
               [PDO::ATTR_PERSISTENT => true, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]

@@ -239,7 +239,7 @@
                         $user = 'u52401'; // Заменить на ваш логин uXXXXX
                         $pass = '7321086'; // Заменить на пароль, такой же, как от SSH
                         $db = new PDO(
-                            'mysql:host=localhost;dbname=u52401',
+                            'mysql:host=localhost;dbname=application',
                             $user,
                             $pass,
                             [PDO::ATTR_PERSISTENT => true, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
@@ -254,7 +254,15 @@
                         $stmt->execute();
 
                         if ($stmt->rowCount() > 0) {
-                            echo '<div class="alert alert-success">Успешный вход в систему!<br>Добро пожаловать, '.$login.'</div>';
+                            echo "<script>";
+                            echo "document.cookie = 'login=' + '" . $login . "' + '; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/';";
+                            echo "</script>";
+                            echo '<div class="alert alert-success">Успешный вход в систему!<br>Добро пожаловать, ' . $login . '<br>Перенаправление...</div>';
+                            echo '<script>
+                                setTimeout(function() {
+                                    window.location.href = "login.php";
+                                }, 3000); // Задержка в 3 секунды (3000 миллисекунд)
+                            </script>';
                         } else {
                             echo '<div class="alert alert-danger">Неверный логин или пароль!</div>';
                         }
